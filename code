@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=0.6]
+\coordinate[label=below:A] (A) at (0,0);
+\coordinate[label=above:B] (B) at (4,6);
+\coordinate[label=above:C] (C) at (12,6);
+\coordinate[label=below:D] (D) at (12,-2);
+\draw (A)--(B)--(C)--(D)--(A);
+\coordinate[label=above:M] (M) at ($(B)!.5!(C)$);
+\coordinate[label=right:N] (N) at ($(D)!.5!(C)$);
+\draw (M)--(N);
+\draw (B)--(D);
+\end{tikzpicture}
